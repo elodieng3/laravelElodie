@@ -13,7 +13,7 @@ class ContactController extends Controller
     }
 
     function store(ContactFromRequest $request) {
-        $contact = new Contact(); //on instancie un nouveau projet
+        $contact = new Contact(); //permet d'instancier un nouveau projet
         $contact->contact_name = $request->name; //on set le titre avec la donnée envoyée du formulaire
         $contact->contact_email = $request->email;
         $contact->contact_message = $request->message;
