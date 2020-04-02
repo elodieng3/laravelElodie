@@ -12,7 +12,7 @@
 <div class="top-bar-left">
 <ul class="menu">
 <li class="menu-text">Blog</li>
-<li><a href="/">Home</a></li>
+<li><a href="/">Accueil</a></li>
 <li><a href="/articles">Article</a></li>
 <li><a href="/contact">Contact</a></li>
 </ul>
@@ -21,8 +21,8 @@
 
 <div class="callout large primary">
 <div class="row column text-center">
-<h1>Our Blog</h1>
-<h2 class="subheader">Such a Simple Blog Layout</h2>
+<h1>Le Blog</h1>
+<h2 class="subheader">Un petit blog</h2>
 </div>
 </div>
 

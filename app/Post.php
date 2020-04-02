@@ -11,8 +11,10 @@ class Post extends Model
     {
         return $this->belongsTo('App\User','user_id');
     }
+    // fonction qui recupère l'auteur de l'article
 
     public function scopeStatus($query){
         return $query->whereIn('id', [8,9,10])->get();
     }
+    // fonction qui permet un affichage des 3 derniers articles
 }

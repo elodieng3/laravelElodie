@@ -14,5 +14,7 @@
           </ul>
         </div>
       </div>
+<!-- permet de faire le layout d'affichage des articles. tous les articles s'afficheront de la même manière.
+Pour chaque article le titre, le contenu, la date, le nom de l'auteur sont variables--> 
 
 @endsection

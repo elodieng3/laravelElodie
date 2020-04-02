@@ -38,4 +38,6 @@ class ContactFromRequest extends FormRequest
             'message.required' => 'Veuillez saisir un message',
         ];
     }
+    /* fonctions qui rendent obligatoires les champs du formulaire de contact
+    et qui permettent un affichage d'explication d'erreurs */
 }

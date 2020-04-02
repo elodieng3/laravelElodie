@@ -8,4 +8,5 @@
 
     @endforeach
 </ul>
+<!-- permet l'affichage des articles sur la page d'accueil -->
 @endsection

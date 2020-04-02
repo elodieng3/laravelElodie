@@ -19,6 +19,7 @@
 <div>
 <input type="submit" value="Valider">
 </div>
+<!-- permet de créer le layout de la page contact avec les champs à remplir -->
 </form>
 @endsection
 

@@ -27,4 +27,5 @@ $factory->define(App\Post::class, function (Faker $faker) {
         'post_name' => $faker->word(),
         'post_type' => 'article',
     ];
+    // fonction qui permet d'insérer des fausses données pour un post dans la base de données pour utliser le blog
 });
