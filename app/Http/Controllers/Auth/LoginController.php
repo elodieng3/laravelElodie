@@ -28,6 +28,15 @@ class LoginController extends Controller
      */
     protected $redirectTo = RouteServiceProvider::HOME;
 
+    public function redirectToProvider()
+    {
+        return Socialite::driver('github')->redirect();
+    }
+    public function handleProviderCallback()
+    {
+        $user = Socialite::driver('github')->user();
+    }
+    
     /**
      * Create a new controller instance.
      *

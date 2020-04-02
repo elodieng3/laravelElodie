@@ -22,3 +22,5 @@ Route::get('/article', 'ArticlesController@index');
 //Route::get('/article/{post_name}', 'PostsController@index');
 Route::get('/article/{post_name}', 'PostsController@show');
 Route::post('contact','ContactController@store');
+Route::get('login/github', 'Auth\LoginController@redirectToProvider');
+Route::get('login/github/callback', 'Auth\LoginController@handleProviderCallback');
