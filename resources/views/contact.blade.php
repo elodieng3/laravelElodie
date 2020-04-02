@@ -17,7 +17,7 @@
 {!! $errors->first('message', '<div class="invalid-feedback">:message</div>') !!}
 </div>
 <div>
-<input type="submit" value="Créer le projet">
+<input type="submit" value="Valider">
 </div>
 </form>
 @endsection

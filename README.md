@@ -76,3 +76,28 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Installation Guide
+
+Pour utiliser le projet il faut avoir Composer, PHP et Laravel d'installés sur son ordinateur.
+Commencer par saisir cette commande: " composer global require laravel/installer "
+Puis: " laravel new blog "
+Une fois que le projet a été installé et que Composer fonctionne il faut lancer le serveur depuis le repertoire en saisissant: " php artisan serve "
+Si tous les composants sont installés le projet sera accessible depuis l'URL: " localhost:8000 ".
+Pour se servir de la base de données il faudra SQLite.
+
+## Parties implémentées
+
+Page Accueil: http://localhost:8000
+Page Articles: http://localhost:8000/articles
+Page Contact: http://localhost:8000/contact
+Détail de l'article 1: http://localhost:8000/article/minus
+
+## Remarques optionnelles
+
+Projet difficile à réaliser. Je connaissais PHP, MySQL, mais je ne connaissais pas Laravel. Cependant, j'ai trouvé cela intéressant.
+Dans le projet il y a un début d'installation de connexion via Github, que je n'ai pas réussi à finir. Par exemple dans la page : LoginController.php
+Les routes ont également été ajoutées dans web.php
+Dans la page Contact, pour valider il faut que tous les champs soient remplis sinon il est impossible d'envoyer le message et il est spécifié un message comme: "Pour valider le message veuillez saisir un nom".
+Si un champ a été rempli mais pas les autres, le champ correctement rempli ne s'efface pas.
+Pour valider le message il faut cliquer sur le bouton "Valider"
