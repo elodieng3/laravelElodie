@@ -89,9 +89,13 @@ Pour se servir de la base de données il faudra SQLite.<br><br>
 ## Parties implémentées <br><br>
 
 * Page Accueil: http://localhost:8000<br>
+Pour la page d'accueil il a fallu créer un affichage des 3 derniers articles. Les liens sont cliquables et redirigent vers l'article cliqué. Le header permet de naviguer entre les 3 pages.<br>
 * Page Articles: http://localhost:8000/articles<br>
+Pour la page des Articles il a fallu créer un affichage des 3 derniers articles enregistrés dans la base de données. L'affichage des articles va suivre un layout: le titre est un cliquable, la date, son image d'illustration, le contenu de l'article, le nombre de commentaires ainsi que le nom de l'auteur.<br>
 * Page Contact: http://localhost:8000/contact<br>
+Pour la page de Contact il a fallu créer un formulaire de contact. Il permet la saisie d'un message avec: nom, email et message. Le tout s'enregistrera dans la base de données. Pour pouvoir valider son message il faut cliquer sur "Envoyer" et que les 3 champs soient impérativements saisis sinon le message n'est pas envoyé. L'adresse mail doit être valide sinon une erreur est signalée. Lors de l'affichage d'une erreur suite à sa détection (par exemple, champs "message" et "noms" vides), si l'adresse mail est correcte elle ne s'effacera pas lorsque l'internaute resaisira les autres champs.<br>
 * Détails de l'article 1: http://localhost:8000/article/minus<br>
+L'affichage des 3 articles suit le même layout: affichage du titre, de la date, de son image d'illustration, du contenu de l'article, du nombre de commentaires ainsi que du nom de l'auteur.<br>
 * Détails de l'article 2: http://localhost:8000/article/quia<br>
 * Détails de l'articles 3: http://localhost:8000/article/facere<br><br>
 
@@ -103,4 +107,4 @@ Les routes ont également été ajoutées dans web.php <br>
 * Dans la page Contact, pour valider il faut que tous les champs soient remplis sinon il est impossible d'envoyer le message et il est spécifié un message comme: "Pour valider le message veuillez saisir un nom".
 Si un champ a été rempli mais pas les autres, le champ correctement rempli ne s'efface pas.
 Pour valider le message il faut cliquer sur le bouton "Valider"<br>
-* J'ai exporté ma base de données SQLite et je l'ai ajouté dans GitHub (notamment pour pouvoir regarder les pages des 3 articles)
+* J'ai exporté ma base de données SQLite et je l'ai ajouté dans GitHub (notamment pour pouvoir regarder les pages des 3 articles) 
