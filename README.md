@@ -83,6 +83,13 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 * Commencer par saisir cette commande: " composer global require laravel/installer "<br>
 * Puis: " laravel new blog "<br>
 * Une fois que le projet a été installé et que Composer fonctionne il faut lancer le serveur depuis le repertoire en saisissant: " php artisan serve "<br>
+* Dans le fichier .env pour les lignes de la base de données il faut saisir : <br>
+DB_CONNECTION=sqlite   
+DB_HOST=127.0.0.1    
+DB_DATABASE=C:\wamp64\www\blog\database\database.sqlite
+<br>
+Le mot de passe de la base de données est: admin
+<br>
 * Si tous les composants sont installés le projet sera accessible depuis l'URL: " localhost:8000 ".
 Pour se servir de la base de données il faudra SQLite.<br><br>
 
@@ -94,6 +101,7 @@ Pour la page d'accueil il a fallu créer un affichage des 3 derniers articles. L
 Pour la page des Articles il a fallu créer un affichage des 3 derniers articles enregistrés dans la base de données. L'affichage des articles va suivre un layout: le titre est un cliquable, la date, son image d'illustration, le contenu de l'article, le nombre de commentaires ainsi que le nom de l'auteur.<br>
 * Page Contact: http://localhost:8000/contact<br>
 Pour la page de Contact il a fallu créer un formulaire de contact. Il permet la saisie d'un message avec: nom, email et message. Le tout s'enregistrera dans la base de données. Pour pouvoir valider son message il faut cliquer sur "Envoyer" et que les 3 champs soient impérativements saisis sinon le message n'est pas envoyé. L'adresse mail doit être valide sinon une erreur est signalée. Lors de l'affichage d'une erreur suite à sa détection (par exemple, champs "message" et "noms" vides), si l'adresse mail est correcte elle ne s'effacera pas lorsque l'internaute resaisira les autres champs.<br>
+* Ajout d'un footer<br>
 * Détails de l'article 1: http://localhost:8000/article/minus<br>
 L'affichage des 3 articles suit le même layout: affichage du titre, de la date, de son image d'illustration, du contenu de l'article, du nombre de commentaires ainsi que du nom de l'auteur.<br>
 * Détails de l'article 2: http://localhost:8000/article/quia<br>
@@ -101,8 +109,8 @@ L'affichage des 3 articles suit le même layout: affichage du titre, de la date,
 
 ## Remarques optionnelles <br><br>
 
-* Projet difficile à réaliser. Je connaissais PHP, MySQL, mais je ne connaissais pas Laravel. Cependant, j'ai trouvé cela intéressant.<br>
-* Dans le projet il y a un début d'installation de connexion via Github, que je n'ai pas réussi à finir. Par exemple dans la page : LoginController.php
+* Projet difficile à réaliser. Je connaissais PHP, MySQL mais mes connaissances étaient faibles, de plus je ne connaissais pas Laravel. Cependant, j'ai trouvé cela intéressant.<br>
+* Dans le projet j'ai débuté l'installation concernant la connexion via Github, que je n'ai pas réussi à finir. Par exemple dans la page : LoginController.php
 Les routes ont également été ajoutées dans web.php <br>
 * Dans la page Contact, pour valider il faut que tous les champs soient remplis sinon il est impossible d'envoyer le message et il est spécifié un message comme: "Pour valider le message veuillez saisir un nom".
 Si un champ a été rempli mais pas les autres, le champ correctement rempli ne s'efface pas.

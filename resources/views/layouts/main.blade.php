@@ -29,10 +29,18 @@
 <div class="row medium-8 large-7 columns">
     @yield('content')
 </div>
+
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
 <script>
       $(document).foundation();
     </script>
+<footer>
+<div class="top-bar" style="margin-top:185px;">
+    <ul>
+        <li class="menu-text">Un footer</li>
+    </ul>
+</div>
+</footer>
 </body>
 </html>
